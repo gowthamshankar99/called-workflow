@@ -8,5 +8,8 @@ on:
 jobs:
   myjob:
      uses: gowthamshankar99/github-actions/.github/workflows/test.yaml@main
+
+  terraformjob:
+     uses: gowthamshankar99/terraform-action/.github/workflows/terraform-static-code-analysis.yaml@main
         
   
