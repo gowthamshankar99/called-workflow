@@ -1,0 +1,17 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Reference the shared workflow
+      - name: Run Shared Workflow 1
+        uses: gowthamshankar99/github-actions@main
