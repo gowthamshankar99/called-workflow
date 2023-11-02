@@ -6,12 +6,7 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      # Reference the shared workflow
-      - name: Run Shared Workflow 1
-        uses: gowthamshankar99/github-actions/.github/workflows/test.yaml@main
+  myjob:
+     uses: gowthamshankar99/github-actions/.github/workflows/test.yaml@main
+        
+  
