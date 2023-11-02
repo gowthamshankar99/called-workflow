@@ -11,5 +11,7 @@ jobs:
 
   terraformjob:
      uses: gowthamshankar99/new-terraform-action/.github/workflows/terraform-static-code-analysis.yaml@main
+     with:
+        cosign-version: 2.2.0
         
   
